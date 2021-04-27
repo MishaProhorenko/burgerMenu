@@ -88,9 +88,11 @@
     color: #fff;
     font-size: 18px;
 }
-.menu__link:hover{
+
+.menu__link:hover {
     text-decoration: underline;
 }
+
 .menu__sub-list {
     position: absolute;
     top: 100%;
@@ -119,5 +121,12 @@
     }
     .menu__list li {
         padding: 10px 0;
+    }
+    .menu__sub-list {
+        transform: translate(0px, 10%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s ease 0s;
     }
 }
